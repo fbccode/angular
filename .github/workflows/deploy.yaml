@@ -51,7 +51,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: firstbuffalo/angular
+          images: fbccode/angular
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
