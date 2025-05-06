@@ -3,6 +3,7 @@ import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component
 import { PrivateLayoutComponent } from './layouts/private-layout/private-layout.component'
 import { AuthenticationService } from './core/services/auth.service'
 import { inject } from '@angular/core'
+import { ContactComponent } from './componentes/contact/contact.component'
 
 export const routes: Routes = [
   {
@@ -39,4 +40,9 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./views/auth/auth.route').then((mod) => mod.AUTH_ROUTES),
   },
+  {
+    path: 'contact',
+    component: ContactComponent
+  },
+
 ]
