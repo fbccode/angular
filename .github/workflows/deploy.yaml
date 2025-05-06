@@ -30,5 +30,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          npm run ng -- deploy --repo=https://github.com/fbccode/angular.git --name="fbccode" --email="info@firstbuffalo.com" --base-href=/angular/
+          npm run ng -- deploy --repo=https://github.com/fbccode/angular --name="fbccode" --email="info@firstbuffalo.com" --base-href=/angular/
+          
           
