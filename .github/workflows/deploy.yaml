@@ -33,7 +33,6 @@ jobs:
         run: |
           npm run ng -- deploy --repo=https://github.com/fbccode/angular.git --name="fbccode" --email="info@firstbuffalo.com" --base-href=/angular/
 
-jobs:
   push_to_registry:
     environment: dockerhub
     name: Push Docker image to Docker Hub
